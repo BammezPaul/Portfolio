@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<script>
+    function getnews(){
+        //fetch('https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=fr&apikey=98de47f1fd7e4269bcb4395eac5ebe39',{headers: new Headers({"X-Requested-With":"test"})})
+        fetch('https://cors-anywhere.herokuapp.com/http://newsapi.org/v2/top-headlines?country=fr&apikey=98de47f1fd7e4269bcb4395eac5ebe39',{headers: new Headers({"X-Requested-With":"test"})})
+        .then(a => a.json())
+        .then(response => {
+            for(var i=0; i<response.articles.length; i++){
+                document.getElementById("output").innerHTML +=
+                "<div style='padding-top: 20px;'><img style='float:left;width:150px;'src='"+response.articles[i].urlToImage+"'><h1>"+response.articles[i].title+"</h1>"+response.articles[i].source.name+"<br>"+response.articles[i].description+" <a href='"+response.articles[i].url+"</a></div>";
+            }
+        })
+    }
+</script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1 id="portfolio">Portfolio de Paul Bammez</h1>
+        <ul> 
+            <li id="floatleft"><a href="index.html">Acceuil</a></li>
+            <li id="floatleft"><a href="Competences.html">Compétences</a></li>
+            <li id="floatleft"><a href="Stages.html">Stages</a></li>
+            <li id="floatleft"><a href="Certifications.html">Certifications</a></li>
+            <li id="floatleft"><a target="_blank" href="CV_Paul_Bammez.pdf" target="_blank">CV</a></li>
+            <li id="floatleft"><a href="VeilleTechno.html">Veille techno</a></li>
+        </ul>
+    </header>
+
+        <h1 class="text_VeilleTechno">Veille Technologique</h1>
+    
+        <a target="_blank" href="https://twitter.com/laVeilleTechno"><button class="twitter">Compte twitter La veille techno</button></a>
+    
+        <a target="_blank" href="https://twitter.com/Digi_Veille"><button class="twitter">Compte twitter La Veille Digitale</button></a>
+    
+        <a target="_blank" href="https://twitter.com/Siecledigital"><button class="twitter">Compte twitter Siècle Digital</button></a>
+    
+        <a target="_blank" href="https://twitter.com/leptidigital"><button class="twitter">Compte twitter LEPTIDIGITAL</button></a>
+    
+    <div>
+    <button class="BoutonNews" onclick='getnews()'>Afficher les news</button>
+    </div>
+    <div id="output"></div>
+
+    <div class="footer">
+        <a class="linkedin" href="https://www.linkedin.com/in/paul-bammez-2a2a38207/"><img  src="images/linkedin.svg"></a>
+        <p class="text_footer">© Paul Bammez | Tous droits Réservés</p>
+        <a href="#" class="text_footer"><p>plan du site</p></a>
+        </div>
+</body>
+</html>

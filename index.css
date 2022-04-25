@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: rgb(33, 87, 187);
+}
+
+#floatleft {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(71, 115, 197);
+}
+
+#portfolio {
+    text-align: center;
+    color: white;
+    background-color: rgb(71, 115, 197);
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.Compétences {
+    text-align: center;
+}
+
+.twitter {
+    background-color: rgb(78, 78, 179);
+    /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 2px;
+    width: 24%;
+}
+
+.text_VeilleTechno {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: rgb(61, 61, 211);
+    text-align: center;
+}
+
+.BoutonNews {
+    margin-top: 10px;
+    background-color: rgb(78, 223, 143);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+    margin-bottom: 18rem;
+    border-radius: 5px;
+    width: 15%;
+}
+
+.Compétence {
+    margin-top: 10px;
+    background-color: rgb(48, 109, 221);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 5px;
+    border-radius: 5px;
+    width: 32%;
+    height: 100px;
+}
+
+.Titre_Competence {
+    text-align: center;
+    color: rgb(33, 118, 228);
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.sous_competence {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.Titre_sous_competence {
+    margin-top: 30px;
+}
+
+.hr {
+    color: rgb(27, 85, 161);
+    margin-top: 5px;
+    border-top: 2px solid;
+    margin-bottom: 10px;
+}
+
+.ImageCompetence {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.object {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page_stage {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+#image_epsi {
+    margin-left: 10%;
+    width: 30%;
+}
+
+#image_BTSSIO {
+    margin-left: 15%;
+    width: 30%;
+    margin-bottom: 120px;
+}
+
+.container {
+    border: solid;
+    border-color: rgb(77, 140, 223);
+    border-width: 2px;
+    border-radius: 10px;
+    width: 100%;
+    background-color: rgb(112, 165, 235);
+}
+
+.presentation {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 200%;
+}
+
+.text_presentation {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.text_footer {
+    text-align: center;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.footer {
+    background-color: rgb(90, 184, 246);
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ConventionStage {
+    background-color: rgb(78, 78, 179);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 60px;
+    margin-left: 180px;
+    border-radius: 2px;
+    width: 24%;
+}
